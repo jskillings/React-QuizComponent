@@ -6,11 +6,11 @@ class QuizQuestion extends Component {
         return (
             <main>
                 <section>
-                    <p>// insrtuction text goes here</p>
+                    <p>{this.props.quiz_question.instruction_text}</p>
                 </section>
                 <section className="buttons">
                     <ul>
-                        <p>quiz question button logic goes here</p>
+                        <li>{this.props.quiz_question.answer_options[0]}</li>
                     </ul>
                 </section>
             </main>
@@ -18,4 +18,4 @@ class QuizQuestion extends Component {
     }
 }
 
-export default QuizQuestions
+export default QuizQuestion
